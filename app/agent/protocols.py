@@ -46,7 +46,7 @@ class ModelResponse:
 
 class Model(Protocol):
     def complete(self, request: ModelRequest) -> ModelResponse:
-        return ModelResponse()
+        ...
 
 class Tool(Protocol):
     """具体工具需要实现的接口。"""
